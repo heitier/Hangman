@@ -9,6 +9,7 @@ random_word = random.choice(word_list)
 
 placeholder = ""
 prev_g = []
+display = []
 
 for letter in random_word:
     placeholder += "_"
@@ -25,7 +26,6 @@ while not game_over:
 
     else:
         prev_g.append(guess)
-        display = []
 
         for letter in random_word:
             if letter in prev_g:
