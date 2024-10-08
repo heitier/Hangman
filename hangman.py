@@ -22,7 +22,9 @@ while not game_over:
 
     if guess in prev_g:
         print("You already guessed that letter!")
+        print("You lose a life!")
         tracked_lives += 1
+
 
     else:
         prev_g.append(guess)
@@ -35,6 +37,8 @@ while not game_over:
 
         if guess not in random_word :
             tracked_lives += 1
+            print(f"You guessed: ", guess)
+            print("You lose a life!")
 
 
     display_str = "".join(display)
